@@ -36,12 +36,15 @@ python -m alltrader --help
 
 - `src/alltrader/` — package and CLI entry point.
 - `tests/` — fast smoke tests.
-- `docs/project/` — durable project decisions and handoff records.
+- `docs/project/` — durable project decisions, release policy, and handoff records.
 - `docs/research/` — evidence-bounded research inputs and reports.
+- `.github/` — CI, issue forms, and review templates.
+
+Operations deployment notes are not applicable to this offline, paper-first initialization; any future runtime deployment must add `docs/ops/` before that milestone.
 
 ## Contributing
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md), [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md), and [`SECURITY.md`](SECURITY.md). By contributing, you agree to license contributions under Apache-2.0.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md), [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md), [`SECURITY.md`](SECURITY.md), and [`docs/project/release-policy.md`](docs/project/release-policy.md). By contributing, you agree to license contributions under Apache-2.0.
 
 ## License
 

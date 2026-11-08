@@ -1,0 +1,25 @@
+name: Feature request
+description: Propose a research, provenance, or evaluation improvement.
+title: "feat: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem and motivation
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Include scope, assumptions, evidence, and failure conditions.
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Safety boundary
+      options:
+        - label: This proposal does not enable live trading or bypass approval gates.
+          required: true

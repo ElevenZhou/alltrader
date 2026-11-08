@@ -1,0 +1,29 @@
+name: Bug report
+description: Report a reproducible problem in the research tooling.
+title: "bug: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Include evidence, environment details, and the smallest reproducible case.
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      placeholder: 0.1.0 or commit SHA
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Commands, inputs, expected result, and actual result.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Logs, fixtures, screenshots, or backtest details. Remove secrets.
+    validations:
+      required: true

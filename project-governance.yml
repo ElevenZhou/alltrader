@@ -1,0 +1,33 @@
+version: 1
+project: alltrader
+code: ALLTRADER
+stage: discovery
+timezone: Asia/Shanghai
+daily_checkpoint:
+  enabled: true
+  cutoff: "00:00"
+  minimum: one-meaningful-local-commit
+push_policy: manual
+required_docs:
+  - AGENTS.md
+  - README.md
+  - docs/project/overview.md
+  - docs/project/architecture.md
+  - docs/project/decisions.md
+  - docs/project/milestones.md
+  - docs/project/intake.md
+  - CHANGELOG.md
+  - AI_PROJECT_HANDOFF.md
+milestone_update_required: true
+ai_handoff_required: true
+production_change_requires_confirmation: true
+notifications:
+  enabled: true
+  provider: feishu-webhook
+  webhook_url: https://open.feishu.cn/open-apis/bot/v2/hook/9229cfad-33e1-42ab-841e-ab876bcf6f36
+  events:
+    - milestone_completed
+    - important_conclusion
+    - blocker_or_risk_change
+    - delivery_ready
+  quiet_on_unchanged: true
